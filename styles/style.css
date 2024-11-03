@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+.font-raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+.ticket-card {
+    position: relative;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.ticket-card:before,
+.ticket-card:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.ticket-card:before {
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+}
+
+.ticket-card:after {
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
